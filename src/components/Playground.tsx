@@ -21,6 +21,18 @@ export const Playground = component$(() => {
     },
     scrollbarTrackBorderRadius: {
       value: '5'
+    },
+    scrollbarTrackActiveColor: {
+      value: '#000'
+    },
+    scrollbarTrackHoverColor: {
+      value: '#000'
+    },
+    scrollbarThumbActiveColor: {
+      value: '#000'
+    },
+    scrollbarThumbHoverColor: {
+      value: '#000'
     }
   }));
 
@@ -33,7 +45,7 @@ export const Playground = component$(() => {
         <Preview inlineStyles={getScrollbarStyles({ styles })} />
       </section>
 
-      <aside class="col-span-1 bg-gray-900 overflow-hidden p-4 rounded-tr-md rounded-br-md">
+      <aside class="col-span-1 bg-gray-900 overflow-auto p-4 rounded-tr-md rounded-br-md">
         <ul class="flex flex-col gap-4">
           {STYLE_INPUTS.map(({ name, label, type, max, min }) => (
             <li key={name} class="flex gap-2 items-center">

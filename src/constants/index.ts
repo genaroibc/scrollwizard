@@ -31,5 +31,25 @@ export const STYLE_INPUTS: PropertyInput[] = [
     type: 'range',
     max: 15,
     min: 0
+  },
+  {
+    name: 'scrollbarTrackHoverColor',
+    label: 'track hover color',
+    type: 'color'
+  },
+  {
+    name: 'scrollbarTrackActiveColor',
+    label: 'track active color',
+    type: 'color'
+  },
+  {
+    name: 'scrollbarThumbHoverColor',
+    label: 'thumb hover color',
+    type: 'color'
+  },
+  {
+    name: 'scrollbarThumbActiveColor',
+    label: 'thumb active color',
+    type: 'color'
   }
 ];

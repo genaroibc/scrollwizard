@@ -3,7 +3,11 @@ export type PropertyName =
   | 'scrollbarThumbColor'
   | 'scrollbarWidth'
   | 'scrollbarThumbBorderRadius'
-  | 'scrollbarTrackBorderRadius';
+  | 'scrollbarTrackBorderRadius'
+  | 'scrollbarTrackHoverColor'
+  | 'scrollbarTrackActiveColor'
+  | 'scrollbarThumbHoverColor'
+  | 'scrollbarThumbActiveColor';
 
 export type Styles = {
   [key in PropertyName]: {

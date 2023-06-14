@@ -19,11 +19,11 @@ export function getScrollbarStyles({ styles }: Props) {
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #4D0BC2;
+  background-color: ${styles.scrollbarTrackHoverColor.value};
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #B8C0C2;
+  background-color: ${styles.scrollbarTrackActiveColor.value};
 }
 
 *::-webkit-scrollbar-thumb {
@@ -32,10 +32,10 @@ export function getScrollbarStyles({ styles }: Props) {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #62A34B;
+  background-color: ${styles.scrollbarThumbHoverColor.value};
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #62A34B;
+  background-color: ${styles.scrollbarThumbActiveColor.value};
 }`;
 }
