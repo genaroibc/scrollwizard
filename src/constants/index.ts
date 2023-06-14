@@ -19,8 +19,15 @@ export const STYLE_INPUTS: PropertyInput[] = [
     min: 5
   },
   {
-    name: 'scrollbarBorderRadius',
-    label: 'scrollbar border radius',
+    name: 'scrollbarThumbBorderRadius',
+    label: 'thumb border radius',
+    type: 'range',
+    max: 15,
+    min: 0
+  },
+  {
+    name: 'scrollbarTrackBorderRadius',
+    label: 'track border radius',
     type: 'range',
     max: 15,
     min: 0

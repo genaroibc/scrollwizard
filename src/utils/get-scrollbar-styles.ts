@@ -5,8 +5,7 @@ type Props = {
 };
 
 export function getScrollbarStyles({ styles }: Props) {
-  return `
-* {
+  return `* {
   scrollbar-color: ${styles.scrollbarThumbColor.value} ${styles.scrollbarTrackColor.value};
 }
 
@@ -15,7 +14,7 @@ export function getScrollbarStyles({ styles }: Props) {
   height: ${styles.scrollbarWidth.value}px;
 }
 *::-webkit-scrollbar-track {
-  border-radius: ${styles.scrollbarBorderRadius.value}px;
+  border-radius: ${styles.scrollbarTrackBorderRadius.value}px;
   background-color: ${styles.scrollbarTrackColor.value};
 }
 
@@ -28,7 +27,7 @@ export function getScrollbarStyles({ styles }: Props) {
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: ${styles.scrollbarBorderRadius.value}px;
+  border-radius: ${styles.scrollbarThumbBorderRadius.value}px;
   background-color: ${styles.scrollbarThumbColor.value};
 }
 
