@@ -1,13 +1,4 @@
-import { component$, Slot, useStyles$ } from '@builder.io/qwik';
-import { routeLoader$ } from '@builder.io/qwik-city';
-
-import Footer from '~/components/starter/footer/footer';
-
-export const useServerTimeLoader = routeLoader$(() => {
-  return {
-    date: new Date().toISOString()
-  };
-});
+import { component$, Slot } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
@@ -15,7 +6,6 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
-      <Footer />
     </>
   );
 });

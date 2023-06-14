@@ -3,12 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { Playground } from '~/components/Playground';
 
 export default component$(() => {
-  return (
-    <main>
-      <h1>How to use Qwik</h1>
-      <Playground />
-    </main>
-  );
+  return <Playground />;
 });
 
 export const head: DocumentHead = {

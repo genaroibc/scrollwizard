@@ -24,7 +24,7 @@ export const Playground = component$(() => {
   }));
 
   return (
-    <section class="grid grid-cols-4 bg-black p-8 gap-4 rounded-3xl place-content-center max-w-5xl mx-auto">
+    <section class="grid grid-cols-4 bg-black p-8 gap-4 rounded-3xl place-content-center max-w-5xl mx-auto text-white">
       <section class="col-span-3 bg-gray-900 overflow-hidden p-4 rounded-tl-3xl rounded-bl-3xl">
         <h1>Scrollbar Wizard</h1>
         <h2>Create a custom scrollbar</h2>
