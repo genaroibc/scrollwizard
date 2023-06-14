@@ -37,15 +37,15 @@ export const Playground = component$(() => {
   }));
 
   return (
-    <section class="grid grid-cols-4 bg-slate-950 p-4 gap-4 rounded-md place-content-center max-w-5xl mx-auto text-white max-h-96">
-      <section class="col-span-3 overflow-hidden rounded-tl-md rounded-bl-md relative">
+    <section class="grid grid-cols-1 md:grid-cols-4 bg-slate-950 p-4 gap-4 rounded-md place-content-center max-w-5xl mx-auto text-white max-h-[30rem]">
+      <section class="col-span-full md:col-span-3 overflow-auto rounded-tl-md rounded-bl-md relative">
         <div class="absolute top-4 right-4">
           <CopyToClipboardButton textToCopy={getScrollbarStyles({ styles })} />
         </div>
         <Preview inlineStyles={getScrollbarStyles({ styles })} />
       </section>
 
-      <aside class="col-span-1 bg-gray-900 overflow-auto p-4 rounded-tr-md rounded-br-md">
+      <aside class="col-span-full md:col-span-1 bg-gray-900 overflow-auto p-4 rounded-tr-md rounded-br-md w-full">
         <ul class="flex flex-col gap-4">
           {STYLE_INPUTS.map(({ name, label, type, max, min }) => (
             <li key={name} class="flex gap-2 items-center">

@@ -11,10 +11,12 @@ export const Preview = component$<Props>(({ inlineStyles }) => {
   });
 
   return (
-    <article class="h-full overflow-scroll text-white bg-slate-800">
+    <article class="text-white bg-slate-800">
       <style dangerouslySetInnerHTML={inlineStyles} />
       <pre>
-        <code class="language-css p-4">{inlineStyles}</code>
+        <code class="language-css p-4 h-full overflow-auto">
+          {inlineStyles}
+        </code>
       </pre>
     </article>
   );
