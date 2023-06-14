@@ -7,7 +7,7 @@ type Props = {
 export const Preview = component$<Props>(({ inlineStyles }) => {
   return (
     <article class="h-full overflow-scroll text-white bg-slate-800 p-4">
-      <style>{inlineStyles}</style>
+      <style dangerouslySetInnerHTML={inlineStyles} />
       <code>
         <pre>{inlineStyles}</pre>
       </code>
