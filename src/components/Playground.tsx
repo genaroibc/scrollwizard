@@ -3,6 +3,7 @@ import { Preview } from './Preview';
 import type { Styles } from '~/types';
 import { STYLE_INPUTS } from '~/constants';
 import { getScrollbarStyles } from '~/utils/get-scrollbar-styles';
+import { CopyToClipboardButton } from './shared/CopyToClipboardButton';
 
 export const Playground = component$(() => {
   const styles = useStore<Styles>(() => ({
@@ -22,7 +23,10 @@ export const Playground = component$(() => {
 
   return (
     <section class="grid grid-cols-4 bg-slate-950 p-4 gap-4 rounded-3xl place-content-center max-w-5xl mx-auto text-white max-h-96">
-      <section class="col-span-3 overflow-hidden p-4 rounded-tl-3xl rounded-bl-3xl">
+      <section class="col-span-3 overflow-hidden p-4 rounded-tl-3xl rounded-bl-3xl relative">
+        <div class="absolute top-4 right-4">
+          <CopyToClipboardButton textToCopy={getScrollbarStyles({ styles })} />
+        </div>
         <Preview inlineStyles={getScrollbarStyles({ styles })} />
       </section>
 
