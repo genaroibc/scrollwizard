@@ -17,6 +17,7 @@ body {
   margin: 0 auto;
   line-height: inherit;
   max-width: 1400px;
+  background-color: var(--qwik-dark-background);
 }
 
 html {

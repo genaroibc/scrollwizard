@@ -13,7 +13,7 @@ export const Preview = component$<Props>(({ styles }) => {
         ''
       )}
       id="scrollbar-preview"
-      class="max-h-96 overflow-auto text-white bg-slate-800 p-4"
+      class="h-full overflow-auto text-white bg-slate-800 p-4"
     >
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
