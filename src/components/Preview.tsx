@@ -15,84 +15,9 @@ export const Preview = component$<Props>(({ styles }) => {
       id="scrollbar-preview"
       class="h-full overflow-auto text-white bg-slate-800 p-4"
     >
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio
-        nemo minima molestiae maiores ipsum deleniti consequatur exercitationem
-        aperiam voluptatum provident, aliquam rem reiciendis, ut cumque incidunt
-        eius quibusdam. Ea.
-      </p>
+      <code>
+        <pre>{JSON.stringify(styles, null, 2)}</pre>
+      </code>
     </article>
   );
 });
