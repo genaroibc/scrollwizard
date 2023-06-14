@@ -6,6 +6,7 @@ import {
 } from '@builder.io/qwik-city';
 import { RouterHead } from './components/router-head/router-head';
 
+import 'highlight.js/styles/shades-of-purple.css';
 import './global.css';
 
 export default component$(() => {

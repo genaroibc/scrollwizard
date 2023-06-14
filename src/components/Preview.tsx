@@ -1,16 +1,21 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
+import hljs from 'highlight.js/lib/common';
 
 type Props = {
   inlineStyles: string;
 };
 
 export const Preview = component$<Props>(({ inlineStyles }) => {
+  useVisibleTask$(() => {
+    hljs.highlightAll();
+  });
+
   return (
-    <article class="h-full overflow-scroll text-white bg-slate-800 p-4">
+    <article class="h-full overflow-scroll text-white bg-slate-800">
       <style dangerouslySetInnerHTML={inlineStyles} />
-      <code>
-        <pre>{inlineStyles}</pre>
-      </code>
+      <pre>
+        <code class="language-css p-4">{inlineStyles}</code>
+      </pre>
     </article>
   );
 });
