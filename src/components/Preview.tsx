@@ -1,8 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import type { Styles } from '~/types';
 
 type Props = {
-  styles: Styles;
   inlineStyles: string;
 };
 

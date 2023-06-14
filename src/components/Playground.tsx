@@ -6,19 +6,15 @@ import { STYLE_INPUTS } from '~/constants';
 export const Playground = component$(() => {
   const styles = useStore<Styles>(() => ({
     scrollbarThumbColor: {
-      cssVar: '--scrollbar-thumb-color',
       value: '#000000'
     },
     scrollbarTrackColor: {
-      cssVar: '--scrollbar-track-color',
       value: '#ffffff'
     },
     scrollbarWidth: {
-      cssVar: '--scrollbar-width',
       value: '5'
     },
     scrollbarBorderRadius: {
-      cssVar: '--scrollbar-border-radius',
       value: '5'
     }
   }));
@@ -62,7 +58,6 @@ export const Playground = component$(() => {
 *::-webkit-scrollbar-thumb:active {
   background-color: #62A34B;
 }`}
-          styles={styles}
         />
       </section>
 

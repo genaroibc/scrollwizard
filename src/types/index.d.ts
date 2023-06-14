@@ -4,15 +4,8 @@ export type PropertyName =
   | 'scrollbarWidth'
   | 'scrollbarBorderRadius';
 
-export type CSSVar =
-  | '--scrollbar-track-color'
-  | '--scrollbar-thumb-color'
-  | '--scrollbar-width'
-  | '--scrollbar-border-radius';
-
 export type Styles = {
   [key in PropertyName]: {
-    cssVar: CSSVar;
     value: string;
   };
 };
