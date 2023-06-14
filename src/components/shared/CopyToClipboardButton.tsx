@@ -1,7 +1,5 @@
 import { $, component$, useSignal } from '@builder.io/qwik';
-import { IconCopy } from './IconCopy';
-import { IconCopied } from './IconCopied';
-
+import { TbClipboard, TbClipboardCheck } from '@qwikest/icons/tablericons';
 type Props = {
   textToCopy: string;
 };
@@ -24,7 +22,7 @@ export const CopyToClipboardButton = component$(({ textToCopy }: Props) => {
       } text-white`}
       onClick$={handleCopyClick}
     >
-      {isCopied.value ? <IconCopied /> : <IconCopy />}
+      {isCopied.value ? <TbClipboardCheck /> : <TbClipboard />}
     </button>
   );
 });
