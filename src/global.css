@@ -34,25 +34,3 @@ body {
   padding: 0;
   line-height: inherit;
 }
-
-#scrollbar-preview {
-  /* scrollbar-color: var(--scrollbar-thumb-color); */
-  /* scrollbar-track-color: var(--scrollbar-track-color); */
-  /* scrollbar-width: calc(var(--scrollbar-width) * 1px); */
-}
-
-#scrollbar-preview::-webkit-scrollbar {
-  background-color: var(--scrollbar-track-color);
-  width: calc(var(--scrollbar-width) * 1px);
-  border-radius: calc(var(--scrollbar-border-radius) * 1px);
-}
-
-#scrollbar-preview::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track-color);
-  border-radius: calc(var(--scrollbar-border-radius) * 1px);
-}
-
-#scrollbar-preview::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-color);
-  border-radius: calc(var(--scrollbar-border-radius) * 1px);
-}

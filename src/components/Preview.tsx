@@ -3,20 +3,15 @@ import type { Styles } from '~/types';
 
 type Props = {
   styles: Styles;
+  inlineStyles: string;
 };
 
-export const Preview = component$<Props>(({ styles }) => {
+export const Preview = component$<Props>(({ inlineStyles }) => {
   return (
-    <article
-      style={Object.values(styles).reduce(
-        (finalStyle, { cssVar, value }) => finalStyle + `${cssVar}:${value};`,
-        ''
-      )}
-      id="scrollbar-preview"
-      class="h-full overflow-auto text-white bg-slate-800 p-4"
-    >
+    <article class="h-full overflow-scroll text-white bg-slate-800 p-4">
+      <style>{inlineStyles}</style>
       <code>
-        <pre>{JSON.stringify(styles, null, 2)}</pre>
+        <pre>{inlineStyles}</pre>
       </code>
     </article>
   );
