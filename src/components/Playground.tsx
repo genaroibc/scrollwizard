@@ -25,13 +25,12 @@ export const Playground = component$(() => {
         <Preview
           inlineStyles={`
 * {
-  scrollbar-width: ${styles.scrollbarWidth.value}px;
   scrollbar-color: ${styles.scrollbarThumbColor.value} ${styles.scrollbarTrackColor.value};
 }
 
 *::-webkit-scrollbar {
   width: ${styles.scrollbarWidth.value}px;
-  width: ${styles.scrollbarWidth.value}px;
+  height: ${styles.scrollbarWidth.value}px;
 }
 *::-webkit-scrollbar-track {
   border-radius: ${styles.scrollbarBorderRadius.value}px;
