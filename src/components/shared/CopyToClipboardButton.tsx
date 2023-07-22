@@ -1,5 +1,6 @@
 import { $, component$, useSignal } from '@builder.io/qwik';
 import { TbClipboard, TbClipboardCheck } from '@qwikest/icons/tablericons';
+
 type Props = {
   textToCopy: string;
 };
@@ -17,6 +18,7 @@ export const CopyToClipboardButton = component$(({ textToCopy }: Props) => {
 
   return (
     <button
+      aria-label="Copy code to clipboard"
       class={`px-4 py-2 rounded-lg ${
         isCopied.value ? 'bg-green-500' : 'bg-blue-500'
       } text-white`}
